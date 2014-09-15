@@ -1,0 +1,26 @@
+{% extends "mapit/base.html" %}
+
+{% block title %}Changelog{% endblock title %}
+
+{% block content %}
+
+<h2>Changelog</h2>
+<p>Changes to MapIt UK's data since 5th September 2014 (when we started
+publishing a changelog).</p>
+
+<h3>04/09/2014 - Torfaen council changes</h3>
+<p>A one-off script was run to fix up some of the changes to Torfaen
+wards/communities in the May 2014 edition of Boundary-Line that should not
+have been present.</p>
+
+<p><a href="http://www.legislation.gov.uk/wsi/2013/2156/contents/made">
+http://www.legislation.gov.uk/wsi/2013/2156/contents/made</a> is the source
+for all of this. Specifically, section 2 saying that articles 5, 6 and 10
+don't come into operation until before the next election, which is 2017.</p>
+
+<p>This script revoked the changes made for the purposes of articles 5 and 6,
+but the changes for article 10 overlap with changes for (active) articles 8
+and 9, so we will live with those being incorrect until Ordnance Survey
+release hopefully fixed boundaries in October.</p>
+
+{% endblock %}
